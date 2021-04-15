@@ -51,8 +51,8 @@ def sendEmail(to ,content):
     sever = smtplib.SMTP('smtp.gmail.com', 587)
     sever.ehlo()
     sever.starttls()
-    sever.login("avi941416@gmail.com", "9452805113")
-    sever.sendmail( "avi941416@gmail.com", to , content)
+    sever.login("your gmail id ", "Password of gmail")
+    sever.sendmail( "yormailid", to , content)
 
 if __name__== "__main__":
     wishme()
@@ -75,7 +75,7 @@ if __name__== "__main__":
             webbrowser.open ("facebook.com")
 
         elif "play music" in query:
-            music_dir ="C:\\Users\\AVINASH\\Desktop\\soundeffect\\15-Free-Ambient-Sound-Effects\\15 Free Ambient Sound Effects"
+            music_dir ="C:\\Users\\Desktop\\soundeffect\\15-Free-Ambient-Sound-Effects\\15 Free Ambient Sound Effects"
             song = os.listdir(music_dir)
             print(song)
             os.startfile(os.path.join(music_dir,song[0]))
@@ -92,9 +92,11 @@ if __name__== "__main__":
             try:
                 speak(" say")
                 content = takecommand()
-                to = "avinash5.kushwaha71@gmail.com"
+                to = "your mail "
                 sendEmail (to, content)
                 speak ("email sent")
             except Exception as e :
                 print(e)
                 speak ("sorry")
+        elif "open mail" in query:
+            webbrowser.open("gmail.com")
