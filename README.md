@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Avinash-py
-- 👀 I’m interested in Machine Learning, Airtificial inteligence
+- 👀 I’m interested in Machine Learning, Artificial inteligence
 - 🌱 I’m currently Persuing B.Tech
 - 📫 Reach me via Email- avi941416@gmail.com
 
